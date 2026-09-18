@@ -1,0 +1,7 @@
+{
+    "LOADING": "Laddar",
+    "INIT_CORE": "Initierar kärna",
+    "INIT_BEFORE_MAP_LOADED": "3d förbehandling",
+    "INIT_AFTER_MAP_LOADED": "3d modeller",
+    "INIT_SESSION": "Session"
+}

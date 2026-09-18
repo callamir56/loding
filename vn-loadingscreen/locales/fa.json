@@ -1,0 +1,7 @@
+{
+    "LOADING": "Loading",
+    "INIT_CORE": "Initializing core",
+    "INIT_BEFORE_MAP_LOADED": "3d preprocessing",
+    "INIT_AFTER_MAP_LOADED": "3d models",
+    "INIT_SESSION": "Session"
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Screen</title>
+    <link rel="stylesheet" href="./assets/index.css" />
+    
+    <script src="./assets/index.js"></script>
+  </head>
+  <body>
+    <main id="loading-screen" class="loading-screen">
+      <video
+        id="background-video"
+        class="background-video"
+        autoplay
+        loop
+        muted
+        playsinline
+      >
+        <source
+          id="background-source"
+          src="./assets/bg.webm"
+          type="video/webm"
+        />
+      </video>
+
+      <audio id="background-music" autoplay loop preload="auto">
+        <source
+          id="music-source"
+          src="./assets/bg.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+
+      <div class="screen-tint" aria-hidden="true"></div>
+      <div class="screen-gradient" aria-hidden="true"></div>
+
+      <section class="progress-section" aria-live="polite">
+        <h1 id="loading-title" class="loading-title">Loading</h1>
+        <div id="progress-list" class="progress-list"></div>
+      </section>
+
+      <section class="bottom-layout">
+        <div class="info-panel-wrap">
+          <div class="logo-mark" aria-hidden="true">
+            <img id="logo-image" src="./assets/logo.png" alt="" />
+          </div>
+          <div class="info-panel">
+            <p id="game-time" class="game-time">11:47 PM</p>
+            <p id="city" class="city">TEHRAN - IRAN</p>
+            <div class="weather">
+              <img id="weather-icon" src="./assets/weather.svg" alt="" />
+              <p id="temperature">25°C</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-panel">
+          <div class="ticker-row">
+            <div id="breaking-label" class="breaking-label">BREAKING NEWS</div>
+            <div class="ticker-window">
+              <div id="ticker-track" class="ticker-track"></div>
+            </div>
+          </div>
+          <div class="headline-box">
+            <p id="headline">WELCOME TO IRAN SERVER!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
